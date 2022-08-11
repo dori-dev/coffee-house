@@ -4,7 +4,68 @@
     url("../fonts/vazir.woff") format("woff");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Vazir;
   direction: rtl;
+}
+
+.container {
+  width: 85%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+
+/* Header */
+
+header {
+  background-image: url("../images/bakcground-header.jpg");
+  height: 100vh;
+  width: 100%;
+}
+
+header nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 80px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 20px;
+}
+
+header nav ul li a:hover {
+  color: #fff;
+}
+
+header nav .logo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+header nav .logo img {
+  height: 80%;
 }
