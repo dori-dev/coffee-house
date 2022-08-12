@@ -106,3 +106,45 @@ header .header-description h1 {
 header .header-description p {
   font-size: 25px;
 }
+
+/* Our Story */
+
+#our-story {
+  width: 100%;
+  height: 450px;
+  padding: 100px 0 100px 0;
+}
+
+#our-story .story-description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#our-story .story-description h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#our-story .story-description p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 90%;
+}
+
+#our-story .story-image {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#our-story .story-image img {
+  height: 100%;
+  border-radius: 10px;
+}
