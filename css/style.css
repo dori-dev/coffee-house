@@ -125,16 +125,16 @@ header .header-description p {
 }
 
 #our-story .story-description h1 {
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
 }
 
 #our-story .story-description p {
   text-align: center;
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
-  max-width: 90%;
+  width: 90%;
 }
 
 #our-story .story-image {
@@ -181,4 +181,67 @@ header .header-description p {
   font-size: 20px;
   width: 40%;
   margin: 22px auto 0 auto;
+}
+
+/* Menu */
+
+#menu {
+  width: 100%;
+  height: 500px;
+  padding: 100px 0;
+}
+
+#menu .menu-description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu .menu-description h1 {
+  font-size: 35px;
+}
+
+#menu .menu-description p {
+  font-size: 20px;
+  margin-top: 15px;
+  width: 90%;
+  line-height: 1.7;
+  text-align: center;
+}
+
+#menu .menu-description a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+#menu .menu-items {
+  width: 50%;
+}
+
+#menu .menu-items ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+#menu .menu-items ul li {
+  flex: 50%;
+  height: 50%;
+}
+
+#menu .menu-items ul li img {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 10px;
 }
