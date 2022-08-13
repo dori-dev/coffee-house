@@ -21,22 +21,23 @@ body {
   display: flex;
 }
 
-/* Header */
-
-header {
-  background-image: url("../images/bakcground-header.jpg");
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-
-header .header-overlay {
+.overlay {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+
+header {
+  background-image: url("../images/bakcground-header.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
 header nav {
@@ -147,4 +148,37 @@ header .header-description p {
 #our-story .story-image img {
   height: 100%;
   border-radius: 10px;
+}
+
+/* Sweet */
+
+#sweet {
+  width: 100%;
+  height: 300px;
+  padding: 100px 0;
+  background-image: url("../images/backtwo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#sweet .sweet-description {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+#sweet .sweet-description h1 {
+  font-size: 45px;
+}
+
+#sweet .sweet-description p {
+  font-size: 20px;
+  width: 40%;
+  margin: 22px auto 0 auto;
 }
