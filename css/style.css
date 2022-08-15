@@ -244,4 +244,10 @@ header .header-description p {
   height: 95%;
   object-fit: cover;
   border-radius: 10px;
+  box-shadow: 3px 3px 6px #999;
+  transition: all 0.1s ease;
+}
+
+#menu .menu-items ul li:hover img {
+  box-shadow: 4px 4px 10px #777;
 }
