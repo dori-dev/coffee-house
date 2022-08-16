@@ -7,6 +7,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Vazir;
 }
 
 body {
@@ -321,4 +322,155 @@ header .header-description p {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #333;
+  width: 100%;
+  height: fit-content;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+}
+
+footer .about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+}
+
+footer .about h2 {
+  font-size: 35px;
+}
+
+footer .about p {
+  width: 50%;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+/* Contact */
+
+footer .contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Social */
+
+footer .contact .social {
+  width: 40%;
+}
+
+footer .contact .social h2 {
+  color: #eee;
+  font-size: 28px;
+}
+
+footer .contact .social ul {
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .contact .social ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer .contact .social ul li a {
+  text-decoration: none;
+}
+
+footer .contact .social ul li a svg {
+  width: 25px;
+  height: 25px;
+}
+
+footer .contact .social ul li a svg path {
+  fill: #eee;
+}
+
+footer .contact .social ul li a:hover svg path {
+  fill: #fff;
+}
+
+/* News Letter */
+
+footer .contact .news-letter {
+  width: 40%;
+}
+
+footer .contact .news-letter h2 {
+  color: #eee;
+  font-size: 28px;
+}
+
+footer .contact .news-letter form input {
+  margin-top: 15px;
+  color: #000;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 4px 10px;
+  width: 80%;
+  font-size: 18px;
+}
+
+/* Copy Right */
+
+footer .copy-right {
+  background-color: #222;
+  text-align: center;
+  color: #eee;
+  width: 100%;
+  padding: 15px 0;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copy-right h2 {
+  font-size: 22px;
+}
+
+footer .copy-right h2 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .copy-right h2 a:hover {
+  color: #eee;
+}
+
+footer .copy-right p {
+  font-size: 18px;
+}
+
+footer .copy-right p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .copy-right p a:hover {
+  color: #eee;
 }
