@@ -8,11 +8,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Vazir;
+  font-family: Vazir, Arial, Helvetica, sans-serif;
 }
 
 body {
-  font-family: Vazir;
+  font-family: Vazir, Arial, Helvetica, sans-serif;
   direction: rtl;
 }
 
@@ -56,7 +56,7 @@ body {
 /* Header */
 
 header {
-  background-image: url("../images/bakcground-header.jpg");
+  background-image: url("../images/background-header.jpg");
   background-size: cover;
   width: 100%;
   height: 100vh;
