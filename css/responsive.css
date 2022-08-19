@@ -1,7 +1,7 @@
 @media screen and (max-width: 992px) {
   :root {
-    --site-title: 42px;
-    --site-paragraph: 22px;
+    --site-title: 45px;
+    --site-paragraph: 23px;
     --title-size: 33px;
     --paragraph-size: 19px;
     --overlay-title: 40px;
@@ -10,13 +10,15 @@
     --section-width: 100%;
     --flex-direction: column;
     --image-margin-top: 30px;
+    --our-story-image-width: 70%;
+    --menu-items-width: 70%;
+    --menu-images-height: 190px;
+    --delicious-images-width: 70%;
+    --email-input-width: 70%;
   }
   .hamburger-icon {
     display: flex;
-    align-items: center;
-    justify-content: right;
   }
-  /* Header */
   header {
     height: 70vh;
   }
@@ -26,48 +28,25 @@
   header nav ul.responsive-navbar {
     display: flex;
   }
-  /* Our Story */
-  #our-story .story-image img {
-    width: 70%;
-  }
-  /* Menu */
-  #menu .menu-items {
-    width: 65%;
-  }
   #menu .menu-description a {
     display: none;
   }
   #menu .see-more-after a {
     display: block;
   }
-  #menu .menu-items ul li img {
-    height: 180px;
-  }
-  /* Delicious */
-  #delicious .images {
-    width: 65%;
-  }
-  #delicious .images img {
-    height: 450px;
-  }
-  /* Social */
   footer .contact .social {
     width: 100%;
     margin-top: 35px;
   }
-  /* News Letter */
   footer .contact .news-letter {
     width: 100%;
-  }
-  footer .contact .news-letter form input {
-    width: 70%;
   }
 }
 
 @media screen and (max-width: 768px) {
   :root {
-    --site-title: 38px;
-    --site-paragraph: 20px;
+    --site-title: 40px;
+    --site-paragraph: 21px;
     --title-size: 30px;
     --paragraph-width: 100%;
     --paragraph-size: 18px;
@@ -75,114 +54,51 @@
     --overlay-title: 35px;
     --overlay-width: 90%;
     --footer-title-size: 25px;
-  }
-  /* Our Story */
-  #our-story .story-image img {
-    width: 90%;
-  }
-  /* Menu */
-  #menu .menu-items {
-    width: 75%;
-  }
-  #menu .menu-items ul li img {
-    height: 170px;
-  }
-  #menu .see-more-after a {
-    font-size: 19px;
-  }
-  /* Delicious */
-  #delicious .images {
-    width: 90%;
-  }
-  /* News Letter */
-  footer .contact .news-letter form input {
-    width: 90%;
-    padding: 3px 8px;
-  }
-  /* Copy Right */
-  footer .copy-right h2 {
-    font-size: 21px;
-  }
-  footer .copy-right p {
-    font-size: 17px;
+    --our-story-image-width: 90%;
+    --menu-items-width: 80%;
+    --menu-images-height: 170px;
+    --delicious-images-width: 85%;
+    --delicious-images-height: 430px;
+    --email-input-width: 90%;
+    --copyright-header: 21px;
+    --copyright-text: 17px;
   }
 }
 
 @media screen and (max-width: 576px) {
   :root {
-    --site-title: 35px;
-    --site-paragraph: 18px;
+    --site-title: 37px;
+    --site-paragraph: 19px;
     --title-size: 28px;
     --overlay-title: 30px;
     --overlay-width: 95%;
     --footer-title-size: 24px;
-  }
-  /* Our Story */
-  #our-story .story-image img {
-    width: 100%;
-  }
-  /* Menu */
-  #menu .menu-items {
-    width: 75%;
-  }
-  #menu .menu-items ul li img {
-    height: 150px;
-  }
-  #menu .see-more-after a {
-    font-size: 18px;
-  }
-  /* Delicious */
-  #delicious .images {
-    width: 100%;
-  }
-  /* News Letter */
-  footer .contact .news-letter form input {
-    font-size: 17px;
-    width: 100%;
-  }
-  /* Copy Right */
-  footer .copy-right h2 {
-    font-size: 20px;
-  }
-  footer .copy-right p {
-    font-size: 16px;
+    --our-story-image-width: 100%;
+    --menu-images-height: 150px;
+    --delicious-images-width: 100%;
+    --email-input-width: 100%;
+    --copyright-header: 20px;
+    --copyright-text: 16px;
   }
 }
 
 @media screen and (max-width: 480px) {
   :root {
-    --site-title: 33px;
+    --site-title: 34px;
+    --menu-items-width: 95%;
+    --menu-images-height: 130px;
+    --delicious-images-height: 300px;
   }
   .hamburger-icon svg {
     width: 38px;
     height: 38px;
   }
-  /* Header */
   header nav .logo {
     width: 80%;
   }
   header nav .logo span {
     font-size: 22px;
     margin-right: 5px;
-  }
-  /* Menu */
-  #menu .menu-items {
-    width: 80%;
-  }
-  #menu .menu-items ul li img {
-    height: 130px;
-  }
-  #menu .see-more-after a {
-    font-size: 17px;
-  }
-  /* Delicious */
-  #delicious .images {
-    flex-direction: column;
-  }
-  #delicious .images img {
-    width: 70%;
-    height: 350px;
-    margin-top: 15px;
   }
 }
 
@@ -192,42 +108,36 @@
     --paragraph-size: 17px;
     --overlay-title: 28px;
     --footer-title-size: 23px;
+    --menu-items-width: 100%;
+    --menu-images-height: 100px;
+    --delicious-images-height: 280px;
+    --copyright-header: 19px;
+    --copyright-text: 15px;
   }
   .hamburger-icon svg {
     width: 35px;
     height: 35px;
   }
-  /* Header */
   header nav .logo span {
     display: none;
   }
   header nav .logo img {
     height: 85%;
   }
-  /* Sweet */
   #sweet {
     height: 350px;
   }
-  /* Menu */
-  #menu .menu-items {
-    width: 100%;
+  #delicious .images {
+    flex-direction: column;
   }
-  #menu .menu-items ul li img {
-    height: 90px;
-  }
-  #menu .see-more-after a {
-    font-size: 15px;
-  }
-  /* Delicious */
   #delicious .images img {
-    width: 90%;
-    height: 300px;
+    width: 85%;
+    margin-top: 15px;
   }
-  /* Copy Right */
-  footer .copy-right h2 {
-    font-size: 19px;
-  }
-  footer .copy-right p {
-    font-size: 15px;
+}
+
+@media screen and (max-height: 600px) {
+  header {
+    height: 80vh;
   }
 }
