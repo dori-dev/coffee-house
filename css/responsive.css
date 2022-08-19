@@ -13,12 +13,6 @@
     align-items: center;
     justify-content: right;
   }
-  #sweet .sweet-description p {
-    width: 80%;
-  }
-  footer .about p {
-    width: 70%;
-  }
   #our-story {
     padding: 50px 0;
   }
@@ -34,6 +28,50 @@
   }
   #our-story .story-image img {
     max-width: 80%;
+  }
+  #sweet .sweet-description p {
+    width: 90%;
+  }
+  #menu {
+    padding: 50px 0;
+  }
+  #menu .container {
+    flex-direction: column;
+  }
+  #menu .menu-description {
+    width: 100%;
+  }
+  #menu .menu-items {
+    margin-top: 30px;
+    width: 65%;
+  }
+  #menu .menu-description a {
+    display: none;
+  }
+  #menu .see-more-after a {
+    display: block;
+  }
+  #menu .menu-items ul li img {
+    height: 180px;
+  }
+  #delicious {
+    padding: 50px 0;
+  }
+  #delicious .container {
+    flex-direction: column;
+  }
+  #delicious .description {
+    width: 100%;
+  }
+  #delicious .images {
+    width: 70%;
+    margin-top: 30px;
+  }
+  #delicious .images img {
+    height: 450px;
+  }
+  footer .about p {
+    width: 80%;
   }
 }
 
@@ -51,7 +89,52 @@
     font-size: 30px;
   }
   #our-story .story-description p {
+    font-size: 19px;
+  }
+  #sweet .sweet-description h1 {
+    font-size: 40px;
+  }
+  #sweet .sweet-description p {
     font-size: 18px;
+    width: 100%;
+  }
+  #menu .menu-description h1 {
+    font-size: 33px;
+  }
+  #menu .menu-description p {
+    font-size: 19px;
+    line-height: 1.6;
+  }
+  #menu .menu-items {
+    width: 75%;
+  }
+  #menu .menu-items ul li img {
+    height: 170px;
+  }
+  #menu .see-more-after a {
+    font-size: 19px;
+  }
+  #hot .hot-title h1 {
+    font-size: 40px;
+  }
+  #hot .hot-title p {
+    font-size: 18px;
+    width: 100%;
+  }
+  #delicious .description h1 {
+    font-size: 35px;
+  }
+  #delicious .description p {
+    font-size: 19px;
+  }
+  #delicious .images {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #delicious .images {
+    width: 90%;
   }
 }
 
@@ -67,19 +150,79 @@
     width: 100%;
   }
   #our-story .story-image img {
-    max-width: 95%;
+    max-width: 100%;
   }
   #our-story .story-description h1 {
     font-size: 28px;
   }
   #our-story .story-description p {
+    font-size: 18px;
     line-height: 1.6;
+  }
+  #sweet .sweet-description h1 {
+    font-size: 35px;
+  }
+  #menu .menu-description h1 {
+    font-size: 30px;
+  }
+  #menu .menu-description p {
+    font-size: 18px;
+  }
+  #menu .menu-items {
+    width: 75%;
+  }
+  #menu .menu-items ul li img {
+    height: 150px;
+  }
+  #menu .see-more-after a {
+    font-size: 18px;
+  }
+  #hot .hot-title h1 {
+    font-size: 35px;
+  }
+  #delicious .images {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 500px) {
   header nav .logo {
     width: 80%;
+  }
+  #sweet .sweet-description h1 {
+    font-size: 32px;
+  }
+  #sweet .sweet-description p {
+    font-size: 17px;
+  }
+  #menu .menu-description h1 {
+    font-size: 28px;
+  }
+  #menu .menu-description p {
+    font-size: 17px;
+  }
+  #menu .menu-items {
+    width: 80%;
+  }
+  #menu .menu-items ul li img {
+    height: 130px;
+  }
+  #menu .see-more-after a {
+    font-size: 17px;
+  }
+  #hot .hot-title h1 {
+    font-size: 32px;
+  }
+  #hot .hot-title p {
+    font-size: 17px;
+  }
+  #delicious .images {
+    flex-direction: column;
+  }
+  #delicious .images img {
+    width: 70%;
+    height: 350px;
+    margin-top: 15px;
   }
 }
 
@@ -90,6 +233,31 @@
   }
   header nav .logo img {
     height: 80%;
+  }
+  #sweet .sweet-description h1 {
+    font-size: 28px;
+  }
+  #sweet .sweet-description p {
+    font-size: 16px;
+  }
+  #menu .menu-description h1 {
+    font-size: 28px;
+  }
+  #menu .menu-description p {
+    font-size: 16px;
+  }
+  #menu .menu-items {
+    width: 90%;
+  }
+  #menu .menu-items ul li img {
+    height: 110px;
+  }
+  #menu .see-more-after a {
+    font-size: 16px;
+  }
+  #delicious .images img {
+    width: 80%;
+    height: 300px;
   }
 }
 
@@ -104,10 +272,31 @@
   header nav .logo img {
     height: 70%;
   }
+  #menu .menu-description h1 {
+    font-size: 25px;
+  }
+  #menu .menu-description p {
+    font-size: 15px;
+  }
+  #menu .menu-items {
+    width: 100%;
+  }
+  #menu .menu-items ul li img {
+    height: 90px;
+  }
+  #menu .see-more-after a {
+    font-size: 15px;
+  }
+  #delicious .images img {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 250px) {
   header nav .logo span {
     display: none;
+  }
+  #sweet {
+    height: 350px;
   }
 }
