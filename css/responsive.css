@@ -71,7 +71,20 @@
     height: 450px;
   }
   footer .about p {
-    width: 80%;
+    width: 85%;
+  }
+  footer .contact {
+    flex-direction: column-reverse;
+  }
+  footer .contact .social {
+    width: 85%;
+    margin-top: 35px;
+  }
+  footer .contact .social ul li {
+    margin: 0 12px;
+  }
+  footer .contact .news-letter {
+    width: 85%;
   }
 }
 
@@ -130,6 +143,36 @@
   #delicious .images {
     width: 80%;
   }
+  footer .about h2 {
+    font-size: 32px;
+  }
+  footer .about p {
+    width: 90%;
+    font-size: 19px;
+    line-height: 1.6;
+  }
+  footer .contact .social {
+    width: 90%;
+  }
+  footer .contact .news-letter {
+    width: 90%;
+  }
+  footer .contact .news-letter h2 {
+    font-size: 26px;
+  }
+  footer .contact .news-letter form input {
+    width: 90%;
+    padding: 3px 8px;
+  }
+  footer .contact .social h2 {
+    font-size: 26px;
+  }
+  footer .copy-right h2 {
+    font-size: 21px;
+  }
+  footer .copy-right p {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -182,6 +225,35 @@
   }
   #delicious .images {
     width: 100%;
+  }
+  footer .about h2 {
+    font-size: 30px;
+  }
+  footer .about p {
+    width: 100%;
+    font-size: 18px;
+  }
+  footer .contact .social {
+    width: 100%;
+  }
+  footer .contact .news-letter {
+    width: 95%;
+  }
+  footer .contact .news-letter h2 {
+    font-size: 25px;
+  }
+  footer .contact .news-letter form input {
+    font-size: 17px;
+    width: 100%;
+  }
+  footer .contact .social h2 {
+    font-size: 25px;
+  }
+  footer .copy-right h2 {
+    font-size: 20px;
+  }
+  footer .copy-right p {
+    font-size: 16px;
   }
 }
 
@@ -258,6 +330,27 @@
   #delicious .images img {
     width: 80%;
     height: 300px;
+  }
+  footer .about h2 {
+    font-size: 28px;
+  }
+  footer .about p {
+    font-size: 17px;
+  }
+  footer .contact .news-letter {
+    width: 100%;
+  }
+  footer .contact .news-letter h2 {
+    font-size: 24px;
+  }
+  footer .contact .social h2 {
+    font-size: 24px;
+  }
+  footer .copy-right h2 {
+    font-size: 19px;
+  }
+  footer .copy-right p {
+    font-size: 15px;
   }
 }
 

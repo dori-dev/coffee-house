@@ -392,7 +392,7 @@ footer .about h2 {
 }
 
 footer .about p {
-  width: 50%;
+  width: 60%;
   font-size: 20px;
   margin-top: 20px;
   line-height: 1.7;
@@ -421,7 +421,7 @@ footer .contact .social h2 {
 }
 
 footer .contact .social ul {
-  margin-top: 15px;
+  margin-top: 12px;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -462,7 +462,7 @@ footer .contact .news-letter h2 {
 }
 
 footer .contact .news-letter form input {
-  margin-top: 15px;
+  margin-top: 12px;
   color: #000;
   border: none;
   outline: none;
@@ -489,6 +489,7 @@ footer .copy-right {
 
 footer .copy-right h2 {
   font-size: 22px;
+  width: 95%;
 }
 
 footer .copy-right h2 a {
@@ -502,6 +503,7 @@ footer .copy-right h2 a:hover {
 
 footer .copy-right p {
   font-size: 18px;
+  width: 95%;
 }
 
 footer .copy-right p a {
