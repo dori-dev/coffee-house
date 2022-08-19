@@ -53,6 +53,15 @@ body {
   fill: #fff;
 }
 
+.menu-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* Header */
 
 header {
@@ -64,12 +73,12 @@ header {
 }
 
 header nav {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
   width: 100%;
   height: 50px;
 }
 
-header nav ul {
+header nav ul.navbar {
   display: flex;
   justify-content: right;
   align-items: center;
@@ -77,18 +86,55 @@ header nav ul {
   height: 100%;
 }
 
-header nav ul li {
+header nav ul.navbar li {
   display: inline-block;
   margin: 0 10px;
 }
 
-header nav ul li a {
+header nav ul.navbar li a {
   text-decoration: none;
   color: #eee;
   font-size: 18px;
 }
 
-header nav ul li a:hover {
+header nav ul.navbar li a:hover {
+  color: #fff;
+}
+
+header nav ul.responsive-navbar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  height: fit-content;
+  top: 50px;
+  right: -150px;
+  padding: 18px 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1;
+  border-bottom-left-radius: 10px;
+  animation: bubble 2s linear 0.5s 1 normal forwards;
+  transition: 0.5s;
+}
+
+header nav ul.responsive-navbar li:first-child {
+  margin: 0;
+}
+
+header nav ul.responsive-navbar li {
+  display: inline-block;
+  margin: 9px 0;
+}
+
+header nav ul.responsive-navbar li a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 18px;
+}
+
+header nav ul.responsive-navbar li a:hover {
   color: #fff;
 }
 
