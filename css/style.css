@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  width: 85%;
+  width: 90%;
   height: 100%;
   margin: auto;
   display: flex;
@@ -117,6 +117,7 @@ header nav ul.responsive-navbar {
   border-bottom-left-radius: 10px;
   animation: bubble 2s linear 0.5s 1 normal forwards;
   transition: 0.5s;
+  display: none;
 }
 
 header nav ul.responsive-navbar li:first-child {
