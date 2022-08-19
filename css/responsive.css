@@ -1,18 +1,16 @@
-@media screen and (max-width: 1200px) {
-  /* Header */
-  /* Our Story */
-  /* Sweet */
-  /* Menu */
-  /* Hot */
-  /* Delicious */
-  /* Footer */
-  /* Contact */
-  /* Social */
-  /* News Letter */
-  /* Copy Right */
-}
-
 @media screen and (max-width: 992px) {
+  :root {
+    --site-title: 42px;
+    --site-paragraph: 22px;
+    --title-size: 33px;
+    --paragraph-size: 19px;
+    --overlay-title: 40px;
+    --overlay-width: 80%;
+    --section-padding: 50px 0;
+    --section-width: 100%;
+    --flex-direction: column;
+    --image-margin-top: 30px;
+  }
   .hamburger-icon {
     display: flex;
     align-items: center;
@@ -29,38 +27,11 @@
     display: flex;
   }
   /* Our Story */
-  #our-story {
-    padding: 50px 0;
-  }
-  #our-story .container {
-    flex-direction: column;
-  }
-  #our-story .story-description,
-  #our-story .story-image {
-    width: 90%;
-  }
-  #our-story .story-image {
-    margin-top: 40px;
-  }
   #our-story .story-image img {
-    max-width: 80%;
-  }
-  /* Sweet */
-  #sweet .sweet-description p {
-    width: 90%;
+    width: 70%;
   }
   /* Menu */
-  #menu {
-    padding: 50px 0;
-  }
-  #menu .container {
-    flex-direction: column;
-  }
-  #menu .menu-description {
-    width: 100%;
-  }
   #menu .menu-items {
-    margin-top: 30px;
     width: 65%;
   }
   #menu .menu-description a {
@@ -72,82 +43,44 @@
   #menu .menu-items ul li img {
     height: 180px;
   }
-  /* Hot */
-
   /* Delicious */
-  #delicious {
-    padding: 50px 0;
-  }
-  #delicious .container {
-    flex-direction: column;
-  }
-  #delicious .description {
-    width: 100%;
-  }
   #delicious .images {
-    width: 70%;
-    margin-top: 30px;
+    width: 65%;
   }
   #delicious .images img {
     height: 450px;
   }
-  /* Footer */
-  footer .about p {
-    width: 85%;
-  }
-  /* Contact */
-  footer .contact {
-    flex-direction: column-reverse;
-  }
   /* Social */
   footer .contact .social {
-    width: 85%;
+    width: 100%;
     margin-top: 35px;
-  }
-  footer .contact .social ul li {
-    margin: 0 12px;
   }
   /* News Letter */
   footer .contact .news-letter {
-    width: 85%;
+    width: 100%;
   }
-  /* Copy Right */
+  footer .contact .news-letter form input {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  /* Header */
-  header .header-description h1 {
-    font-size: 40px;
-  }
-  header .header-description p {
-    font-size: 22px;
+  :root {
+    --site-title: 38px;
+    --site-paragraph: 20px;
+    --title-size: 30px;
+    --paragraph-width: 100%;
+    --paragraph-size: 18px;
+    --paragraph-line-height: 1.6;
+    --overlay-title: 35px;
+    --overlay-width: 90%;
+    --footer-title-size: 25px;
   }
   /* Our Story */
   #our-story .story-image img {
-    max-width: 90%;
-  }
-  #our-story .story-description h1 {
-    font-size: 30px;
-  }
-  #our-story .story-description p {
-    font-size: 19px;
-  }
-  /* Sweet */
-  #sweet .sweet-description h1 {
-    font-size: 40px;
-  }
-  #sweet .sweet-description p {
-    font-size: 18px;
-    width: 100%;
+    width: 90%;
   }
   /* Menu */
-  #menu .menu-description h1 {
-    font-size: 33px;
-  }
-  #menu .menu-description p {
-    font-size: 19px;
-    line-height: 1.6;
-  }
   #menu .menu-items {
     width: 75%;
   }
@@ -157,47 +90,11 @@
   #menu .see-more-after a {
     font-size: 19px;
   }
-  /* Hot */
-  #hot .hot-title h1 {
-    font-size: 40px;
-  }
-  #hot .hot-title p {
-    font-size: 18px;
-    width: 100%;
-  }
   /* Delicious */
-  #delicious .description h1 {
-    font-size: 35px;
-  }
-  #delicious .description p {
-    font-size: 19px;
-  }
   #delicious .images {
     width: 90%;
   }
-  /* Footer */
-  footer .about h2 {
-    font-size: 32px;
-  }
-  footer .about p {
-    width: 90%;
-    font-size: 19px;
-    line-height: 1.6;
-  }
-  /* Social */
-  footer .contact .social {
-    width: 90%;
-  }
-  footer .contact .social h2 {
-    font-size: 26px;
-  }
   /* News Letter */
-  footer .contact .news-letter {
-    width: 90%;
-  }
-  footer .contact .news-letter h2 {
-    font-size: 26px;
-  }
   footer .contact .news-letter form input {
     width: 90%;
     padding: 3px 8px;
@@ -212,39 +109,19 @@
 }
 
 @media screen and (max-width: 576px) {
-  /* Header */
-  header .header-description h1 {
-    font-size: 35px;
-  }
-  header .header-description p {
-    font-size: 20px;
+  :root {
+    --site-title: 35px;
+    --site-paragraph: 18px;
+    --title-size: 28px;
+    --overlay-title: 30px;
+    --overlay-width: 95%;
+    --footer-title-size: 24px;
   }
   /* Our Story */
-  #our-story .story-description,
-  #our-story .story-image {
+  #our-story .story-image img {
     width: 100%;
   }
-  #our-story .story-image img {
-    max-width: 100%;
-  }
-  #our-story .story-description h1 {
-    font-size: 28px;
-  }
-  #our-story .story-description p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-  /* Sweet */
-  #sweet .sweet-description h1 {
-    font-size: 35px;
-  }
   /* Menu */
-  #menu .menu-description h1 {
-    font-size: 30px;
-  }
-  #menu .menu-description p {
-    font-size: 18px;
-  }
   #menu .menu-items {
     width: 75%;
   }
@@ -254,39 +131,11 @@
   #menu .see-more-after a {
     font-size: 18px;
   }
-  /* Hot */
-  #hot .hot-title h1 {
-    font-size: 35px;
-  }
   /* Delicious */
   #delicious .images {
     width: 100%;
   }
-  #delicious .description h1 {
-    font-size: 30px;
-  }
-  /* Footer */
-  footer .about h2 {
-    font-size: 30px;
-  }
-  footer .about p {
-    width: 100%;
-    font-size: 18px;
-  }
-  /* Social */
-  footer .contact .social {
-    width: 100%;
-  }
-  footer .contact .social h2 {
-    font-size: 25px;
-  }
   /* News Letter */
-  footer .contact .news-letter {
-    width: 95%;
-  }
-  footer .contact .news-letter h2 {
-    font-size: 25px;
-  }
   footer .contact .news-letter form input {
     font-size: 17px;
     width: 100%;
@@ -301,6 +150,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  :root {
+    --site-title: 33px;
+  }
   .hamburger-icon svg {
     width: 38px;
     height: 38px;
@@ -313,22 +165,7 @@
     font-size: 22px;
     margin-right: 5px;
   }
-  /* Our Story */
-
-  /* Sweet */
-  #sweet .sweet-description h1 {
-    font-size: 32px;
-  }
-  #sweet .sweet-description p {
-    font-size: 17px;
-  }
   /* Menu */
-  #menu .menu-description h1 {
-    font-size: 28px;
-  }
-  #menu .menu-description p {
-    font-size: 17px;
-  }
   #menu .menu-items {
     width: 80%;
   }
@@ -336,13 +173,6 @@
     height: 130px;
   }
   #menu .see-more-after a {
-    font-size: 17px;
-  }
-  /* Hot */
-  #hot .hot-title h1 {
-    font-size: 32px;
-  }
-  #hot .hot-title p {
     font-size: 17px;
   }
   /* Delicious */
@@ -354,13 +184,15 @@
     height: 350px;
     margin-top: 15px;
   }
-  /* Footer */
-  /* Social */
-  /* News Letter */
-  /* Copy Right */
 }
 
 @media screen and (max-width: 320px) {
+  :root {
+    --title-size: 26px;
+    --paragraph-size: 17px;
+    --overlay-title: 28px;
+    --footer-title-size: 23px;
+  }
   .hamburger-icon svg {
     width: 35px;
     height: 35px;
@@ -372,25 +204,11 @@
   header nav .logo img {
     height: 85%;
   }
-  /* Our Story */
-
   /* Sweet */
   #sweet {
     height: 350px;
   }
-  #sweet .sweet-description h1 {
-    font-size: 28px;
-  }
-  #sweet .sweet-description p {
-    font-size: 16px;
-  }
   /* Menu */
-  #menu .menu-description h1 {
-    font-size: 25px;
-  }
-  #menu .menu-description p {
-    font-size: 15px;
-  }
   #menu .menu-items {
     width: 100%;
   }
@@ -400,33 +218,10 @@
   #menu .see-more-after a {
     font-size: 15px;
   }
-  /* Hot */
-
   /* Delicious */
   #delicious .images img {
     width: 90%;
     height: 300px;
-  }
-  #delicious .description h1 {
-    font-size: 28px;
-  }
-  /* Footer */
-  footer .about h2 {
-    font-size: 28px;
-  }
-  footer .about p {
-    font-size: 17px;
-  }
-  /* Social */
-  footer .contact .social h2 {
-    font-size: 24px;
-  }
-  /* News Letter */
-  footer .contact .news-letter {
-    width: 100%;
-  }
-  footer .contact .news-letter h2 {
-    font-size: 24px;
   }
   /* Copy Right */
   footer .copy-right h2 {
