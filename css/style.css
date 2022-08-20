@@ -1,4 +1,11 @@
 :root {
+  --light-color: #eee;
+  --brighter-color: #fff;
+  --input-color: #000;
+  --dark-color: #333;
+  --darker-color: #222;
+  --transparent-dark-color: rgba(0, 0, 0, 0.6);
+  --transparent-darker-color: rgba(0, 0, 0, 0.8);
   --site-title: 50px;
   --site-paragraph: 25px;
   --title-size: 35px;
@@ -58,7 +65,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--transparent-dark-color);
 }
 
 .flex-display {
@@ -83,38 +90,29 @@ body {
 .hamburger-icon svg {
   width: 40px;
   height: 40px;
-  fill: #eee;
+  fill: var(--light-color);
   cursor: pointer;
 }
 
 .hamburger-icon svg:hover {
-  fill: #fff;
-}
-
-.menu-background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  fill: var(--brighter-color);
 }
 
 #our-story .story-description h1,
 #menu .menu-description h1,
-#delicious .description h1,
-footer .about h2 {
+#delicious .description h1 {
   font-size: var(--title-size);
+  color: var(--darker-color);
 }
 
 #our-story .story-description p,
 #menu .menu-description p,
-#delicious .description p,
-footer .about p {
+#delicious .description p {
   font-size: var(--paragraph-size);
   margin-top: var(--title-to-paragraph-distance);
   line-height: var(--paragraph-line-height);
   width: var(--paragraph-width);
+  color: var(--darker-color);
 }
 
 #sweet .sweet-description h1,
@@ -144,7 +142,7 @@ header .container {
 }
 
 header nav {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: var(--transparent-darker-color);
   width: 100%;
   height: 50px;
 }
@@ -164,12 +162,12 @@ header nav ul.navbar li {
 
 header nav ul.navbar li a {
   text-decoration: none;
-  color: #eee;
+  color: var(--light-color);
   font-size: 18px;
 }
 
 header nav ul.navbar li a:hover {
-  color: #fff;
+  color: var(--brighter-color);
 }
 
 header nav ul.responsive-navbar {
@@ -179,7 +177,7 @@ header nav ul.responsive-navbar {
   top: 50px;
   right: -150px;
   padding: 18px 30px;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: var(--transparent-darker-color);
   z-index: 1;
   border-bottom-left-radius: 10px;
   animation: bubble 2s linear 0.5s 1 normal forwards;
@@ -198,12 +196,12 @@ header nav ul.responsive-navbar li {
 
 header nav ul.responsive-navbar li a {
   text-decoration: none;
-  color: #eee;
+  color: var(--light-color);
   font-size: 18px;
 }
 
 header nav ul.responsive-navbar li a:hover {
-  color: #fff;
+  color: var(--brighter-color);
 }
 
 header nav .logo {
@@ -219,13 +217,13 @@ header nav .logo img {
 }
 
 header nav .logo span {
-  color: #eee;
-  font-size: 24px;
+  color: var(--light-color);
+  font-size: 23px;
   margin-right: 10px;
 }
 
 header .header-description {
-  color: #eee;
+  color: var(--brighter-color);
   position: absolute;
   top: 50px;
   bottom: 0;
@@ -282,7 +280,7 @@ header .header-description p {
 }
 
 #sweet .sweet-description {
-  color: #fff;
+  color: var(--light-color);
   margin: auto;
 }
 
@@ -303,11 +301,15 @@ header .header-description p {
   font-size: var(--paragraph-size);
   margin-top: var(--title-to-paragraph-distance);
   text-decoration: none;
-  color: #000;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--dark-color);
+  color: var(--light-color);
   padding: 4px 12px;
   border-radius: 12px;
+}
+
+#menu .menu-description a:hover,
+#menu .see-more-after a:hover {
+  background-color: var(--darker-color);
 }
 
 #menu .menu-items {
@@ -361,7 +363,7 @@ header .header-description p {
 
 #hot .hot-title {
   width: 100%;
-  color: #fff;
+  color: var(--light-color);
   margin: auto;
 }
 
@@ -395,7 +397,7 @@ header .header-description p {
 /* Footer */
 
 footer {
-  background-color: #333;
+  background-color: var(--dark-color);
   width: 100%;
   height: fit-content;
 }
@@ -410,8 +412,18 @@ footer .container {
 
 footer .about {
   width: 100%;
+  color: var(--light-color);
+}
 
-  color: #eee;
+footer .about h2 {
+  font-size: var(--title-size);
+}
+
+footer .about p {
+  font-size: var(--paragraph-size);
+  margin-top: var(--title-to-paragraph-distance);
+  line-height: var(--paragraph-line-height);
+  width: var(--paragraph-width);
 }
 
 /* Contact */
@@ -433,7 +445,7 @@ footer .contact .social {
 
 footer .contact .social h2 {
   font-size: var(--footer-title-size);
-  color: #eee;
+  color: var(--light-color);
 }
 
 footer .contact .social ul {
@@ -459,11 +471,11 @@ footer .contact .social ul li a svg {
 }
 
 footer .contact .social ul li a svg path {
-  fill: #eee;
+  fill: var(--light-color);
 }
 
 footer .contact .social ul li a:hover svg path {
-  fill: #fff;
+  fill: var(--brighter-color);
 }
 
 /* News Letter */
@@ -474,14 +486,14 @@ footer .contact .news-letter {
 
 footer .contact .news-letter h2 {
   font-size: var(--footer-title-size);
-  color: #eee;
+  color: var(--light-color);
 }
 
 footer .contact .news-letter form input {
   font-size: var(--paragraph-size);
   width: var(--email-input-width);
   margin-top: 12px;
-  color: #000;
+  color: var(--input-color);
   border: none;
   outline: none;
   border-radius: 5px;
@@ -491,9 +503,9 @@ footer .contact .news-letter form input {
 /* Copy Right */
 
 footer .copy-right {
-  background-color: #222;
+  background-color: var(--darker-color);
   text-align: center;
-  color: #eee;
+  color: var(--light-color);
   width: 100%;
   padding: 15px 0;
   height: fit-content;
@@ -511,11 +523,11 @@ footer .copy-right p {
 
 footer .copy-right h2 a,
 footer .copy-right p a {
-  color: #fff;
+  color: var(--light-color);
   text-decoration: none;
 }
 
 footer .copy-right h2 a:hover,
 footer .copy-right p a:hover {
-  color: #eee;
+  color: var(--brighter-color);
 }
