@@ -39,13 +39,20 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 100%;
   box-sizing: border-box;
+  vertical-align: baseline;
   font-family: Vazir, Arial, Helvetica, sans-serif;
 }
 
 body {
   font-family: Vazir, Arial, Helvetica, sans-serif;
   direction: rtl;
+}
+
+ol,
+ul {
+  list-style: none;
 }
 
 .container {
@@ -322,7 +329,6 @@ header .header-description p {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
 }
 
 #menu .menu-items ul li {
@@ -450,7 +456,6 @@ footer .contact .social h2 {
 
 footer .contact .social ul {
   margin-top: 12px;
-  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
